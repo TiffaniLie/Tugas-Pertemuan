@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        h1 {
+            color: #333;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: #666;
+        }
+
+        div {
+            border: double;
+            padding: 10px;
+            color: blue;
+            border-radius: 16px;
+            line-height: 2;
+        }
+
+        address {
+            display: block;
+            font-style: italic;
+        }
+    
+        label {
+            cursor: default;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="myeducation.html">My Education</a></li>
+                <li><a href="myfamily.html">My Family</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Contact</h1>
+        </header>
+        <section class="contact">
+            <img src="img/profile.jpg" alt="Profile Picture" class="profile-pic">
+            <p class="description" style="font-size: 18px;">
+                This is my contacts.
+            </p>
+        </section>
+        <body>
+            <div>
+            <address style="font-style:normal;">
+                <i class="material-icons">mail</i>
+                 Email: <a href="mailto:webmaster@example.com">tiffanilie@gmail.com</a>.
+            </address>
+            </div>
+            <div>
+                <i class="material-icons">phone</i> Whatsapp: 0882*********
+            </div>
+            <p>Is This Page Useful ?</p>
+            <label for="yes">Yes</label>
+            <input type="radio" name="question" id="yes" value="yes">
+            <label for="no">No</label>
+            <input type="radio" name="question" id="no" value="no"><br>
+            <input type="submit" value="Submit">
+        </body>
+        <footer>
+            <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
