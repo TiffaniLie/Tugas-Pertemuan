@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout with Float and Forms Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+      
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    .loginbtn {
+      background-color: #04AA6D;
+      color: white;
+      padding-inline: 20px;
+      padding-block: 14px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      margin: 5px 0;
+      opacity: 0.85;
+      display: inline-block;
+      font-size: 17px;
+      line-height: 20px;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      opacity: 1;
+    }
+
+    .cancelbtn {
+      width: auto;
+      padding-inline: 20px;
+      padding-block: 10px;
+      border: none;
+      color: white;
+      background-color: #f44336;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 500px;
+      margin-inline: auto;
+      margin-block: 20px;
+      padding: 16px;
+      background-color: rgba(255, 255, 255, 0.936)
+    }
+
+    .section {
+      text-align: center;
+    }
+
+    #fb-btn {
+      background-color: #3B5998;
+      color: white;
+    }
+
+    #google-btn {
+      background-color: #dd4b39;
+      color: white;
+    }
+
+    .hr-text {
+      line-height: 1em;
+      position: relative;
+      outline: 0;
+      border: 0;
+      color: black;
+      text-align: center;
+      height: 1.5em;
+      opacity: .5;
+    &:before {
+      content: '';
+      background: linear-gradient(to right, transparent, #525252, transparent);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+    }
+    &:after {
+      content: attr(data-content);
+      position: relative;
+      display: inline-block;
+      color: black;
+
+      padding: 0 .5em;
+      line-height: 1.5em;
+      color: #525252;
+      background-color: #fcfcfa;
+    }
+    }
+
+    a {
+      color: dodgerblue;
+    }
+
+    span.psw {
+      float: right;
+      padding-top: 5px;
+      padding-bottom: 5px
+    }
+
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+      <div class="container">
+        <h2 style="text-align: center;">Sign In</h2><br>
+        
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" id="username" required>
+        
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id= required>
+        
+        <button type="submit" class="loginbtn">Login</button>
+      </div>
+      
+    </form>
+</body>
+</html>
