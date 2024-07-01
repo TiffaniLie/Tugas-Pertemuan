@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 
-body {
+._230060008_body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #afe1ff;
 }
 
-header, footer {
+._230060008_header, ._230060008_footer {
     background-color: #afe1ff;
     color: beige;
     text-align: center;
@@ -23,59 +23,64 @@ header, footer {
     overflow: hidden;
 }
 
-header {
+._230060008_header {
     background: #afe1ff;
     color: beige;
     padding: 15px 0;
 }
 
-header ._230060008_container {
+._230060008_header ._230060008_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header h1 a {
+._230060008_header h1 a {
     color: beige;
     text-decoration: none;
 }
 
-header nav ul {
+._230060008_header nav ul {
     list-style: none;
     display: flex;
 }
 
-header nav ul li {
+._230060008_header nav ul li {
     margin-left: 20px;
 }
 
-header nav ul li a {
+._230060008_header nav ul li a {
     color: #f5f5f5;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
 }
 
-section {
+._230060002_main {
+    padding: 20px;
+    text-align: center;
+}
+
+._230060008_section {
     padding: 60px 0;
     background: beige;
 }
 
-section h2 {
+._230060008_section h2 {
     text-align: center;
     margin-bottom: 30px;
 }
 
-section p {
+._230060008_section p {
     text-align: center;
     margin-bottom: 30px;
 }
 
-ul {
+._230060008_ul {
     list-style-type: none;
 }
 
-footer {
+._230060008_footer {
     text-align: center;
     background: #afe1ff;
     color: #f5f5f5;
@@ -83,14 +88,49 @@ footer {
     text-align: center;
 }
 
-table {
+._230060008_table {
     width: 100%;
     border-collapse: collapse;
+    background-color: whitesmoke;
 }
-table, th, td {
+._230060008_table, th, td {
     border: 1px solid black;
 }
 th, td {
     padding: 10px;
     text-align: left;
+}
+
+._230060008_form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: aliceblue;
+}
+
+form label {
+    text-align: left;
+    display: block;
+    margin-top: 1em;
+    padding: 5px;
+    background-color: aquamarine;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+form input[type="submit"] {
+    width: auto;
+    background: lightblue;
+    color: #fff;
+    border: none;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: blue;
 }
