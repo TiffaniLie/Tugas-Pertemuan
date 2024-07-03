@@ -1,0 +1,133 @@
+body{
+    background: #35A9DB;
+    font-family: roboto;
+    text-align: center;
+    color: #fff;
+}
+ 
+.ketengah{
+    margin: 10px auto;
+    width: 1150px;
+}
+ 
+ 
+@font-face {
+        font-family: tulisan_keren;
+        src: url(Black\ History.otf);
+}
+ 
+.font-khusus{
+    font-family: 'tulisan_keren';
+    font-size: 70pt;
+    font-variant: inherit;
+}
+
+@font-face {
+    font-family: tulisan_roti;
+    src: url(bakery.otf);
+}
+
+.font-bakery{
+font-family: 'tulisan_roti';
+font-size: 70pt;
+font-variant: inherit;
+}
+
+@font-face {
+    font-family: tulisan_ultah;
+    src: url(Birthday.otf);
+}
+
+.font-birth{
+font-family: 'tulisan_ultah';
+font-size: 70pt;
+font-variant: inherit;
+}
+
+@font-face {
+    font-family: tulisan_bold;
+    src: url(BodoniFLF-Bold.ttf);
+}
+
+.font-bold{
+font-family: 'tulisan_bold';
+font-size: 70pt;
+font-variant: inherit;
+}
+
+@font-face {
+    font-family: tulisan_kupu;
+    src: url(Butterfly.otf);
+}
+
+.font-kupu-kupu{
+font-family: 'tulisan_kupu';
+font-size: 70pt;
+font-variant: inherit;
+}
+
+@font-face {
+    font-family: tulisan_trovert;
+    src: url(DollieScript_PersonalUse.ttf);
+}
+
+.font-dollie{
+font-family: 'tulisan_trovert';
+font-size: 70pt;
+font-variant: inherit;
+}
+
+@font-face {
+    font-family: tulisan_decor;
+    src: url(KrinkesDecorPERSONAL.ttf);
+}
+
+.font-krinkes{
+font-family: 'tulisan_decor';
+font-size: 70pt;
+font-variant: inherit;
+}
+
+@font-face {
+    font-family: tulisan_sketsa;
+    src: url(Sketch.ttf);
+}
+
+.font-sketch{
+font-family: 'tulisan_sketsa';
+font-size: 70pt;
+font-variant: inherit;
+}
+
+@font-face {
+    font-family: tulisan_komik;
+    src: url(SnackerComic_PerosnalUseOnly.ttf);
+}
+
+.font-snacker{
+font-family: 'tulisan_komik';
+font-size: 70pt;
+font-variant: inherit;
+}
+
+@font-face {
+    font-family: tulisan_south;
+    src: url(SouthernAire_Personal_Use_Only.ttf);
+}
+
+.font-southern{
+font-family: 'tulisan_south';
+font-size: 70pt;
+font-variant: inherit;
+}
+
+@font-face {
+    font-family: tulisan_lucu;
+    src: url(Chubby.otf);
+}
+
+.font-chubby{
+font-family: 'tulisan_lucu';
+font-size: 70pt;
+font-variant: inherit;
+}
