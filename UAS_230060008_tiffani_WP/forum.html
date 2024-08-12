@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner-Consult - Forum</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font.css">
+    <script src="js/forum.js" defer></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        .forum-hero {
+            background-image: url('img/forum.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .forum-hero-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .forum-hero-content h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .forum-hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .forum-hero-content a {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007bff; /* Button color */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .forum-section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #e3f2fd;
+            border-radius: 10px;
+        }
+
+        .forum-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .forum-section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .forum-post {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .forum-post h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .forum-post p {
+            font-size: 1rem;
+        }
+
+        .forum-post a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .forum-post a:hover {
+            text-decoration: underline;
+        }
+
+        .slideshow {
+            position: relative;
+            max-width: 100%;
+            margin: 40px auto;
+        }
+
+        .slideshow img {
+            width: 100%;
+            height: auto;
+        }
+
+        .slideshow .slide {
+            display: none;
+        }
+
+        .slideshow .active {
+            display: block;
+        }
+
+        .testimonial-section {
+            background-color: #fff;
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 10px;
+        }
+
+        .testimonial-section h2 {
+            font-size: 2.5rem;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .testimonial {
+            margin-bottom: 20px;
+            border-left: 4px solid #007bff;
+            padding-left: 20px;
+        }
+
+        .testimonial p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="_230060008_logo-title">
+                <img src="img/logo.jpeg" alt="Logo" class="_230060008_logo">
+                <a class="navbar-brand" href="home.html">Partner-Consult</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="forum.html">Forum</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="service.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="business.html">Business Consulting</a>
+                            <a class="dropdown-item" href="it.html">IT Consulting</a>
+                            <a class="dropdown-item" href="marketing.html">Digital Marketing</a>
+                            <a class="dropdown-item" href="workshop.html">Training and Workshops</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="customer.html">Customer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="forum-hero">
+            <div class="forum-hero-content">
+                <h2 class="font-times" style="color: var(--blueberry-popover);">Join the Conversation</h2>
+                <p>Engage with professionals, share insights, and get your questions answered in our interactive forum.</p>
+                <a href="forum.html" class="forum-cta-button">Explore Forum Topics</a>
+            </div>
+        </section>
+
+        <div class="forum-section">
+            <h2 class="font-3d">Latest Discussions</h2>
+            <div class="forum-post">
+                <h3>How to Improve Business Strategy?</h3>
+                <p>Discuss various strategies to enhance business growth and efficiency. Share your insights and learn from others' experiences.</p>
+                <a href="business.html">Read More</a>
+            </div>
+            <div class="forum-post">
+                <h3>Effective IT Solutions for Modern Businesses</h3>
+                <p>Explore and debate the best IT solutions and technologies that can help streamline business operations and boost productivity.</p>
+                <a href="it.html">Read More</a>
+            </div>
+            <div class="forum-post">
+                <h3>Digital Marketing Trends to Watch</h3>
+                <p>Engage in conversations about the latest trends in digital marketing and how they can impact your business strategy.</p>
+                <a href="marketing.html">Read More</a>
+            </div>
+        </div>
+
+        <section class="slideshow">
+            <div class="slide active">
+                <img src="img/slideshow1.jpg" alt="Slideshow Image 1">
+                <h5>Consulting Success Story</h5>
+                <p>How we transformed client businesses.</p>
+            </div>
+            <div class="slide">
+                <img src="img/slideshow2.jpeg" alt="Slideshow Image 2">
+                <h5>Upcoming Workshop</h5>
+                <p>Join our next training session.</p>
+            </div>
+            <div class="slide">
+                <img src="img/slideshow3.jpeg" alt="Slideshow Image 3">
+                <h5>Client Testimonials</h5>
+                <p>What our clients say about us.</p>
+            </div>
+        </section>
+
+        <section class="testimonial-section">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial">
+                <p>"Partner-Consult provided exceptional insights and support for our business strategy. Highly recommended!" - Jane Doe, CEO</p>
+            </div>
+            <div class="testimonial">
+                <p>"Their IT consulting services were top-notch and helped us streamline our operations effectively." - John Smith, IT Manager</p>
+            </div>
+            <div class="testimonial">
+                <p>"The digital marketing advice we received was invaluable. Our online presence has significantly improved." - Alice Johnson, Marketing Director</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Partner-Consult. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.querySelectorAll('.slide');
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = 'block';
+            setTimeout(showSlides, 3000); // Change slide every 3 seconds
+        }
+    </script>
+</body>
+</html>

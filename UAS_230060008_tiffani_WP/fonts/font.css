@@ -1,0 +1,76 @@
+@font-face {
+    font-family: tulisan_bounty_italic;
+    src: url(bounty-motion/Bounty\ Motion\ Italic\ DEMO\ VERSION.ttf);
+}
+
+.font-sketchita{
+font-family: 'tulisan_bounty_italic';
+font-size: 50pt;
+font-variant: inherit;
+}
+
+@font-face {
+    font-family: tulisan_bounty;
+    src: url(bounty-motion/Bounty\ Motion\ DEMO\ VERSION.ttf);
+}
+
+.font-sketch{
+font-family: 'tulisan_bounty';
+font-size: 50pt;
+font-variant: inherit;
+}
+
+@font-face {
+    font-family: tulisan_montague;
+    src: url(montague/Montague.ttf);
+}
+
+.font-3d{
+font-family: 'tulisan_montague';
+font-size: 50pt;
+font-variant: inherit;
+}
+
+@font-face {
+    font-family: tulisan_piknik;
+    src: url(picknick/Picknick\ PERSONAL\ USE\ ONLY!.ttf);
+}
+
+.font-piknik{
+font-family: 'tulisan_piknik';
+font-size: 50pt;
+font-variant: inherit;
+}
+
+@font-face {
+    font-family: tulisan_ai;
+    src: url(th3-machine/TH3\ MACHINE.ttf);
+}
+
+.font-ai{
+font-family: 'tulisan_ai';
+font-size: 50pt;
+font-variant: inherit;
+}
+
+@font-face {
+    font-family: tulisan_timeless;
+    src: url(timeless-silvera/Timeless\ Silvera\ DEMO\ VERSION.ttf);
+}
+
+.font-times{
+font-family: 'tulisan_timeless';
+font-size: 50pt;
+font-variant: inherit;
+}
+
+@font-face {
+    font-family: tulisan_timeless_italic;
+    src: url(timeless-silvera/Timeless\ Silvera\ Italic\ DEMO\ VERSION.ttf);
+}
+
+.font-timesita{
+font-family: 'tulisan_timeless_italic';
+font-size: 50pt;
+font-variant: inherit;
+}

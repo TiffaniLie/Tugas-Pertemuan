@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner-Consult - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/home.js" defer></script> <!-- Include home.js script -->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="_230060008_logo-title">
+                <img src="img/logo.jpeg" alt="Logo" class="_230060008_logo">
+                <a class="navbar-brand" href="home.html">Partner-Consult</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="forum.html">Forum</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="service.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="business.html">Business Consulting</a>
+                            <a class="dropdown-item" href="it.html">IT Consulting</a>
+                            <a class="dropdown-item" href="marketing.html">Digital Marketing</a>
+                            <a class="dropdown-item" href="workshop.html">Training and Workshops</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="customer.html">Customer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main style="background-color: #94bccc;">
+        <img src="img/customer.jpeg" alt="Customer" class="_230060008_img">
+        <section id="consultation" class="_230060008_consultation">
+            <h2>Consultation Clients</h2>
+            <p>Please fill out the form below to add a new client:</p>
+            <form id="consultation-form">
+                <input type="text" id="name" placeholder="Client Name" required>
+                <input type="email" id="email" placeholder="Client Email" required>
+                <input type="tel" id="phone" placeholder="Client Phone" required>
+                <textarea id="details" placeholder="Consultation Details" required></textarea>
+                <button type="submit">Add Client</button>
+            </form>
+
+            <h3>Client List</h3>
+            <table id="client-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Consultation Details</th>
+                    </tr>
+                </thead>
+                <tbody id="client-body">
+                    <!-- Client data will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="js/customer.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>

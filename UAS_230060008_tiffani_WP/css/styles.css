@@ -1,0 +1,438 @@
+:root {
+    --dark-denim: #003c71;
+    --blue-chalk: #9bb1d8;
+    --blueberry-popover: #3d70b2;
+    --scuba: #008d7f;
+    --dust-to-dust: #7f8c8d;
+    --machine-gun-metal: #43464b;
+    --everlasting-ice : #f4fdf8;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #05548b; /* Background color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures footer stays at the bottom */
+}
+
+header {
+    background-color: #1E3A78; /* Dark Denim */
+    color: white;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Align items horizontally */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+nav ul li {
+    position: relative; /* To position the dropdown */
+    margin-left: 2rem; /* Space between menu items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /* Remove underline */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+._230060008_nav-button {
+    margin-left: 1rem;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.1s; /* Animation for hover and click effects */
+}
+
+._230060008_nav-button.login {
+    background-color: #1E3A78; /* Dark Denim */
+}
+
+._230060008_nav-button.login:hover {
+    background-color: #0056b3; /* Lighter blue on hover */
+}
+
+._230060008_nav-button.login:active {
+    background-color: #003d66; /* Color when button is clicked */
+}
+
+._230060008_nav-button.register {
+    background-color: #B0B3B8; /* Dust to Dust */
+}
+
+._230060008_nav-button.register:hover {
+    background-color: #A0A4A8; /* Darker grey on hover */
+}
+
+._230060008_nav-button.register:active {
+    background-color: #8B8E90; /* Color when button is clicked */
+}
+
+/* Hero section styles */
+._230060008_hero {
+    background-color: #05548b; /* Dark Denim as the background color */
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+._230060008_hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+._230060008_cta-button {
+    background-color: #1E3A78; /* Dark Denim */
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Container for arrow text */
+._230060008_arrow-container {
+    background-color: #1E3A78;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0; /* Top and bottom margin */
+}
+
+/* Text for arrow link */
+._230060008_arrow-text {
+    margin-bottom: 0.5rem; 
+    font-size: 1rem;
+    color: #94bccc;
+}
+
+._230060008_register {
+    background-color: #94bccc; /* Dust to Dust */
+    color: #548cbc;
+}
+
+._230060008_register:hover {
+    background-color: #bcbcbc; /* Darker grey on hover */
+}
+
+._230060008_register:active {
+    background-color: #454545; /* Color when button is clicked */
+}
+
+/* Media query to hide arrow text on small screens */
+@media (max-width: 600px), (max-height: 400px) {
+    ._230060008_arrow-container {
+        display: none; /* Hide container if screen width is less than 600px */
+    }
+}
+
+/* Media query for larger screens */
+@media (min-width: 601px) {
+    ._230060008_arrow-container {
+        display: flex; /* Show container if screen width is greater than 600px */
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #7D7F81; /* Machine Gun Metal */
+    color: white;
+    margin-top: auto; /* Keeps footer at the bottom */
+    width: 100%;
+}
+
+._230060008_logo-title {
+    display: flex;
+    align-items: center; /* Menjaga logo dan judul berada di tengah secara vertikal */
+}
+
+._230060008_logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem; /* Spasi antara logo dan judul */
+}
+
+._230060008_form-container {
+    max-width: 400px;
+    margin: 5rem auto;
+    padding: 2rem;
+    border: 1px solid #ccc; /* Border abu-abu */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white; /* Latar belakang putih untuk form */
+}
+
+._230060008_form-container input {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0; /* Jarak antar input */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+._230060008_form-container button {
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.5rem 0; /* Margin untuk jarak antar tombol */
+    transition: background-color 0.3s, transform 0.1s; /* Animasi untuk efek hover dan klik */
+}
+
+._230060008_form-container button.register {
+    background-color: #B0B3B8; /* Dust to Dust */
+}
+
+._230060008_form-container button.register:hover {
+    background-color: #A0A4A8; /* Abu-abu lebih gelap pada hover */
+}
+
+._230060008_form-container button.register:active {
+    background-color: #8B8E90; /* Warna saat tombol diklik */
+}
+
+._230060008_form-container p {
+    margin-top: 1rem;
+}
+
+/* Gaya untuk tautan di form */
+._230060008_form-container a {
+    color: #1E3A78; /* Dark Denim */
+    text-decoration: none;
+}
+
+._230060008_form-container a:hover {
+    text-decoration: underline; /* Efek hover untuk tautan */
+}
+
+._230060008_text {
+    color:#94bccc;
+}
+
+/* Styles for the contact invitation section */
+._230060008_contact-invitation {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Styles for the contact form */
+._230060008_contact {
+    max-width: 600px; /* Set a max width for the contact section */
+    margin: 2rem auto; /* Center the contact section */
+    padding: 2rem; /* Add padding */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: white; /* White background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Styles for input fields and textarea */
+._230060008_contact input,
+._230060008_contact textarea {
+    width: 100%; /* Full width */
+    padding: 0.5rem; /* Padding inside input */
+    margin: 0.5rem 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Styles for the submit button */
+._230060008_contact button {
+    background-color: #1E3A78; /* Dark Denim */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 0.5rem 1rem; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+/* Button hover effect */
+._230060008_contact button:hover {
+    background-color: #0056b3; /* Lighter blue on hover */
+}
+
+._230060008_consultation-invitation {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Styles for the contact form */
+._230060008_consultation {
+    max-width: 600px; /* Set a max width for the contact section */
+    margin: 2rem auto; /* Center the contact section */
+    padding: 2rem; /* Add padding */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: white; /* White background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Styles for input fields and textarea */
+._230060008_consultation input,
+._230060008_consultation textarea {
+    width: 100%; /* Full width */
+    padding: 0.5rem; /* Padding inside input */
+    margin: 0.5rem 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Styles for the submit button */
+._230060008_consultation button {
+    background-color: #1E3A78; /* Dark Denim */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 0.5rem 1rem; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+/* Button hover effect */
+._230060008_consultation button:hover {
+    background-color: #0056b3; /* Lighter blue on hover */
+}
+
+/* Styles for the messages table */
+#messages-table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 1rem; /* Space above the table */
+}
+
+#messages-table th,
+#messages-table td {
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 0.5rem; /* Padding in cells */
+    text-align: left; /* Align text to the left */
+}
+
+#messages-table th {
+    background-color: #1E3A78; /* Dark Denim for header */
+    color: white; /* White text for header */
+}
+
+#messages-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light grey for even rows */
+}
+
+#messages-table tbody tr:hover {
+    background-color: #e0e0e0; /* Light grey on hover */
+}
+
+/* About section styles */
+._230060008_about {
+    max-width: 800px; /* Set a max width for the about section */
+    margin: 2rem auto; /* Center the section */
+    padding: 2rem; /* Add padding */
+    background-color: white; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+._230060008_about h2 {
+    color: #1E3A78; /* Dark Denim for headings */
+}
+
+._230060008_services {
+    max-width: 800px; /* Set a max width for the services section */
+    margin: 2rem auto; /* Center the section */
+    padding: 2rem; /* Add padding */
+    background-color: white; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+._230060008_services h2 {
+    color: #1E3A78; /* Dark Denim for headings */
+}
+
+._230060008_values {
+    max-width: 800px; /* Set a max width for the values section */
+    margin: 2rem auto; /* Center the section */
+    padding: 2rem; /* Add padding */
+    background-color: white; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+._230060008_values h2 {
+    color: #1E3A78; /* Dark Denim for headings */
+}
+
+/* Styling for lists in the services and values sections */
+._230060008_services ul,
+._230060008_values ul {
+    list-style-type: disc; /* Bullet points */
+    margin-left: 20px; /* Indent list items */
+}
+
+._230060008_services li,
+._230060008_values li {
+    margin: 0.5rem 0; /* Space between list items */
+    color: #333; /* Darker color for list items */
+}
+
+._230060008_img {
+    width: 100%;
+}
+
+@media (min-width: 768px)  {
+    ._230060008_hero {
+        display: block;
+    }
+}
+
+._230060008_menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hide on larger screens */
+}
+
+.navbar-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: var(--blueberry-popover);
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu .dropdown-item {
+    color: var(--blue-chalk);
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--scuba);
+    color: white;
+}
